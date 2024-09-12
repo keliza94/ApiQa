@@ -1,0 +1,14 @@
+
+# Conclusiones
+
+Este proyecto de pruebas con Karate demostró ser una opción eficiente y rápida para la automatización de APIs, especialmente cuando se compara con frameworks más complejos como Serenity BDD.
+
+1. **Menos dependencias**: Una de las principales ventajas de utilizar Karate es que requiere menos dependencias que frameworks como Serenity. Esto simplifica el proceso de configuración y reduce la sobrecarga de administración de bibliotecas adicionales, lo que facilita el arranque rápido del proyecto.
+
+2. **No requiere step definitions**: A diferencia de otros frameworks que requieren step definitions para vincular los escenarios con el código, Karate permite escribir los escenarios directamente en los archivos .feature sin necesidad de definir pasos adicionales. Esto hace que la escritura de pruebas sea mucho más rápida e intuitiva, lo que resulta en una curva de aprendizaje más corta.
+
+3. **Dificultades con APIs sin documentación**: Aunque probar APIs es más rápido que probar interfaces gráficas, un desafío importante es la falta de documentación. Sin la documentación adecuada, probar una API puede ser un proceso de prueba y error, lo que dificulta el avance, ya que no siempre es evidente qué parámetros o respuestas se deben esperar. En este sentido, el proceso de pruebas puede ser "a ciegas", lo que aumenta el riesgo de no cubrir todos los escenarios relevantes.
+
+4. **Pruebas de web vs API**: En comparación con las pruebas de interfaces gráficas, donde la parte visual guía las acciones que se deben probar, las APIs no ofrecen este tipo de retroalimentación visual inmediata. Esto significa que, sin una buena documentación o especificaciones, la prueba de APIs puede ser menos intuitiva y más propensa a omitir detalles importantes.
+
+En resumen, Karate ofrece una solución más ágil para la automatización de pruebas de APIs, especialmente cuando se busca rapidez y simplicidad en comparación con frameworks como Serenity. Sin embargo, cuando se carece de documentación adecuada, las pruebas de APIs pueden volverse más difíciles y menos predecibles que las de interfaces gráficas.

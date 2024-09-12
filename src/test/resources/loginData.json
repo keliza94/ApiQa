@@ -1,0 +1,10 @@
+{
+  "validUser": {
+    "username": "keliza.vargas@gmail.com",
+    "password": "Hello123"
+  },
+  "invalidUser": {
+    "username": "usuario_incorrecto",
+    "password": "contrasena_erronea"
+  }
+}
