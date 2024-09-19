@@ -1,0 +1,10 @@
+{
+  "newUser": {
+    "username": "keli2vargas@gmail.com",
+    "password": "Hello123"
+  },
+  "wrongUser": {
+    "username": "usuario_incorrecto",
+    "password": "contrasena123"
+  }
+}
