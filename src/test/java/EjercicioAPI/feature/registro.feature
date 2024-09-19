@@ -2,14 +2,15 @@ Feature: Signup API Tests
 
   Background:
     * url 'https://api.demoblaze.com/signup'
+    * def signupData = read('classpath:signupData.json')
 
-  Scenario: Crear un nuevo usuario en signup
-    Given request { username: 'kelizvargas@gmail.com', password: 'Hello123' }
+  Scenario Outline: Crear y verificar usuarios
+    Given request { username: '#(username)', password: '#(password)' }
     When method POST
     Then status 200
+    And match response == <expectedResponse>
 
-  Scenario: Intentar crear un usuario ya existente
-    Given request { username: 'existente_usuario', password: 'contrasena123' }
-    When method POST
-    Then status 200
-    And match response == { "errorMessage": "This user already exist." }
+    Examples:
+      | username                          | password                           | expectedResponse                                      |
+      | #(signupData.newUser.username)     | #(signupData.newUser.password)      | { "success": "Sign up successful." }                  |
+      | #(signupData.existingUser.username)| #(signupData.existingUser.password) | { "errorMessage": "This user already exist." }        |
