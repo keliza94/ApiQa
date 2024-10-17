@@ -11,6 +11,6 @@ Feature: Signup API Tests
     And match response == <expectedResponse>
 
     Examples:
-    Examples:
       | username                          | password                           | expectedResponse                                      |
-      | testuser                           | password123                        | { "errorMessage": "This user already exist." }        |
+      | #(signupData.newUser.username)     | #(signupData.newUser.password)      | { "success": "Sign up successful." }                  |
+      | #(signupData.existingUser.username)| #(signupData.existingUser.password) | { "errorMessage": "This user already exist." }        |
