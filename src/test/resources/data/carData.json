@@ -1,0 +1,18 @@
+{
+  "validData": {
+    "brand": "9",
+    "model": "116",
+    "year": "21177",
+    "version": "5575",
+    "vehicleId": "2311288"
+  },
+  "invalidData": {
+    "brand": "9",
+    "model": "116",
+    "year": "21177",
+    "version": "5575",
+    "vehicleId": "231128"
+  }
+}
+
+
